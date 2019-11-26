@@ -1,5 +1,8 @@
 // Write your JavaScript code here.
+//Event handler to ensure JS runs after all elements load.
 window.addEventListener("load", function() {
+
+    //Initializing Variables and Initial Conditions
     let takeOffButton = document.getElementById("takeoff");
     let landingButton = document.getElementById("landing");
     let missionAbortButton = document.getElementById("missionAbort");
@@ -14,11 +17,13 @@ window.addEventListener("load", function() {
     let shuttleBackground = document.getElementById("shuttleBackground");
     let spaceShuttleHeight = document.getElementById('spaceShuttleHeight');
     let rocket = document.getElementById("rocket");
+
     rocket.style.position = 'relative';
     shuttleBackground.backgroundSize = 'cover';
     let rocketHorizontal = 0;
     let rocketVertical = 0;
-
+    
+    //Programming Buttons
     takeOffButton.addEventListener("click", function(){
         let isRocketReady = confirm("Confirm that the rocket is ready for take off.");
 
